@@ -6,20 +6,20 @@ Cinemeeting::Application.routes.draw do
 
   root :to => 'service#index'
   
-  #devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" }
-  #devise_scope :user do
-  #  get 'sign_in', :to => 'devise/sessions#new', :as => :new_user_session
-  #  get 'sign_out', :to => 'devise/sessions#destroy', :as => :destroy_user_session
+  devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" }
+  devise_scope :user do
+    get 'sign_in', :to => 'devise/sessions#new', :as => :new_user_session
+    get 'sign_out', :to => 'devise/sessions#destroy', :as => :destroy_user_session
+  end
+
+  #evise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" } do
+  #  get 'sign_in', :to => 'users/sessions#new', :as => :new_user_session
+  #  get 'sign_out', :to => 'users/sessions#destroy', :as => :destroy_user_session
   #end
 
-  evise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" } do
-    get 'sign_in', :to => 'users/sessions#new', :as => :new_user_session
-    get 'sign_out', :to => 'users/sessions#destroy', :as => :destroy_user_session
-  end
-
-  devise_scope :user do
-    get '/users/auth/:provider' => 'users/omniauth_callbacks#passthru'
-  end
+  #devise_scope :user do
+  #  get '/users/auth/:provider' => 'users/omniauth_callbacks#passthru'
+  #end
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
