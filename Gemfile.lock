@@ -157,7 +157,6 @@ PLATFORMS
 DEPENDENCIES
   coffee-rails (~> 3.2.1)
   devise
-  execjs
   jquery-rails
   omniauth-facebook
   omniauth-twitter
