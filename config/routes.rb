@@ -1,5 +1,9 @@
 Cinemeeting::Application.routes.draw do
   
+  get "service/index"
+
+  get "service/welcome"
+
   root :to => 'service#index'
   
   devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" }

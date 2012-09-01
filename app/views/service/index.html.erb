@@ -1,7 +1,25 @@
-<ul class="nav">
-  <% if user_signed_in? %>
-    <li><%= link_to 'ログアウト', destroy_user_session_path %></li>
-  <% else %>
-      <li><%= link_to "twitterでログイン", user_omniauth_authorize_path(:twitter)  %></li>
-  <% end %>
-</ul>
+<% content_for :sidebar do %>
+<iframe width="448" height="300" src="http://www.youtube.com/embed/DdVlsAikl9o" frameborder="0" allowfullscreen></iframe>
+<% end %>
+
+<h2>映画で出会う新しいカタチ</h2>
+<ol>
+  <li>見たい映画を選ぶ</li>
+  <li>「見たい」がマッチ</li>
+  <li>オファーを出す</li>
+  <li>シネミーティングをする</li>
+</ol> 
+<p>あの映画見たいな。そう思ってもなかなか友達と予定が合わない、映画の趣味が分からず誘いづらい、なんてことはありませんか？
+Cinemeeting（シネミーティング、シネミー）なら、同じ映画に行きたい友達と出会えます。<br>
+趣味の合う友達と映画チャットで盛り上がる、一緒に映画を見て盛り上がる。
+まだ見知らぬ"あの人"との出会いにドキドキしましょう。
+</p>
+
+<% if user_signed_in? %>
+  <div class="alert alert-block alert-success">
+    <h4>登録ありがとうございます。</h4>
+  </div>
+  <!-- <%= link_to 'ログアウト', destroy_user_session_path, :class=>'btn span2' %>-->
+<% else %>
+  <%= link_to 'Twitterで事前登録', user_omniauth_authorize_path(:twitter), :class=>'btn btn-info span2' %>
+<% end %>

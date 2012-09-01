@@ -1,7 +1,14 @@
 require 'test_helper'
 
 class ServiceControllerTest < ActionController::TestCase
-  # test "the truth" do
-  #   assert true
-  # end
+  test "should get index" do
+    get :index
+    assert_response :success
+  end
+
+  test "should get welcome" do
+    get :welcome
+    assert_response :success
+  end
+
 end

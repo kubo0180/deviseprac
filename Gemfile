@@ -52,3 +52,6 @@ gem 'devise'
 gem 'omniauth-facebook'
 gem 'omniauth-twitter'
 
+#boostrap
+gem 'twitter-bootstrap-rails'
+

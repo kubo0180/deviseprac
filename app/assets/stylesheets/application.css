@@ -11,3 +11,10 @@
  *= require_self
  *= require_tree .
  */
+
+#logo {
+  font-weight: bold;
+  font-size: 300%;
+  margin-top: 10px;
+  font-family: 'Permanent Marker', cursive;
+}
