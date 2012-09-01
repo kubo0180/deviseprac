@@ -2,14 +2,17 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.7'
 
+gem 'execjs'
 gem 'therubyracer'
+
+
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 group :production do
   gem 'pg' 
-  gem 'therubyracer-heroku'
+  gem 'therubyracer'
 end
   group :development, :test do
   gem 'sqlite3'
