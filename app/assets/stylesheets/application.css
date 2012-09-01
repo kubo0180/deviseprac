@@ -18,3 +18,7 @@
   margin-top: 10px;
   font-family: 'Permanent Marker', cursive;
 }
+
+#social-button {
+  vertical-align: middle;
+}
