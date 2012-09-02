@@ -1,5 +1,6 @@
 Cinemeeting::Application.routes.draw do
-  
+  resources :authentications 
+ 
   get "service/index"
 
   get "service/welcome"
