@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:og=”http://ogp.me/ns#” xmlns:fb=”http://www.facebook.com/2008/fbml”>
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
@@ -34,8 +34,29 @@
     <!-- Size should be 32 x 32 pixels -->
     <%= favicon_link_tag 'images/favicon.ico', :rel => 'shortcut icon' %>
 
+    <!-- For facebook like button -->
+    <meta property="og:title" content="Cinemeeting" />
+    <meta property="og:type" content="product" />
+    <meta property="og:url" content="http://cinemtg.heroku.com" />
+    <meta property="og:image" content="" />
+    <meta property="og:site_name" content="Cinemeeting" />
+    <meta property="fb:app id" content="319750564787529" />
+    <meta property="og:description" content="Cinemeeting事前登録サイトです" />
+    
+    
   </head>
   <body>
+    <!-- For facebook like button -->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/ja_JP/all.js#xfbml=1&appId=319750564787529";
+      fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+
     <div class="navbar navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container">
@@ -73,28 +94,15 @@
         <div class="content">
           <div class="row">
             
-            <div class="span2">
-              <ul class="">
-                <li><a href="#">aaa</a></li>
-                <li><a href="#">aaa</a></li>
-                <li><a href="#">aaa</a></li>
-                <li><a href="#">aaa</a></li>
-              </ul>
-            </div>
-            <div class="span2">
-              <ul class="">
-                <li><a href="#">aaa</a></li>
-                <li><a href="#">aaa</a></li>
-                <li><a href="#">aaa</a></li>
-                <li><a href="#">aaa</a></li>
-              </ul>
-            </div>
-            <div class="span2">
-              <ul class="">
-              </ul>
-            </div>
-            <div class="span6" id="social-button">
-              <p>Social button</p>
+            <div class="span4">
+              <!-- Follow @cinemtg button -->
+              <a href="https://twitter.com/cinemtg" class="twitter-follow-button" data-show-count="false" data-lang="ca">Segueix a @cinemtg</a>
+              <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+              <!-- Tweet about a @cinemtg -->
+                <a href="https://twitter.com/share" class="twitter-share-button" data-text="Cinemeetingはじめました！" data-via="cinemtg" data-lang="ja">ツイート</a>
+                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+              <!-- Like button -->
+                <div class="fb-like" data-href="http://cinemtg.com/" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false"></div>
             </div>
           </div>
         </div>
