@@ -1,8 +1,8 @@
 Cinemeeting::Application.configure do
   
   Devise.setup do |config|
-    config.omniauth :twitter, 'EkHcyijpNhUHAatWvhxmg', 'PcO4cNwTKxRAu1drXIU7j8F5X2he24tUl0yn0DrbQ', :display => 'popup'
-  end  
+    config.omniauth :twitter, 'GvMbU9I0VqHN3QPNnpGN2A', 'ZoBp2fnA0XOm2RTOvHQ5Wdt35MoQHMjHrqaeWtgaGiw', :display => 'popup'
+  end
 
   # Settings specified here will take precedence over those in config/application.rb
 

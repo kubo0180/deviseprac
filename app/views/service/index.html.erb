@@ -10,8 +10,11 @@ Cinemeeting（シネミーティング、シネミー）なら、同じ映画に
 
 <% if user_signed_in? %>
   <div class="alert alert-block alert-success span5 registBox">
-    <h4>登録ありがとうございます。</h4>
-    <%= link_to 'ログアウト', destroy_user_session_path %>
+    <h4 id="thanks-for-regist">登録ありがとうございます。</h4>
+    <!-- <%= link_to 'ログアウト', destroy_user_session_path %> -->
+    <p>Cinemeetingに関する最新情報はTwitterよりご連絡いたします。ぜひ、Cinemeetingの公式Twitterアカウントをフォローください。</p>
+    <a href="https://twitter.com/cinemeeting" class="twitter-follow-button" data-show-count="false" data-lang="ja" data-size="large">@cinemeetingさんをフォロー</a>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script> 
 </div>
 
   </div>
