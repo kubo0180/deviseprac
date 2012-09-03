@@ -75,14 +75,7 @@
     <div class="container">
       <div class="content">
         <div class="row">
-              <div class="span6">
-                <div class="sidebar-nav">
-                  <ul class="nav nav-list">
-                    <%= yield :sidebar %>
-                  </ul>
-                </div><!--/.well -->
-              </div><!--/span6-->
-              <div class="span6">
+              <div class="span8 offset2">
                 <%= yield %>
               </div><!--/span6-->
         </div><!--/row-->
@@ -93,7 +86,7 @@
       <div class="container">
         <div class="content">
           <div class="row">
-            <div class="span6 offset6">
+            <div class="span8 offset2">
               <!-- Follow @cinemtg button -->
               <a href="https://twitter.com/cinemtg" class="twitter-follow-button" data-show-count="false" data-lang="ca">Segueix a @cinemtg</a>
               <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>

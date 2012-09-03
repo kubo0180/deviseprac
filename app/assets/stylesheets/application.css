@@ -25,3 +25,9 @@
 footer {
   margin: 20px;
 }
+
+body {
+  background-image: url("./images/background_slice.jpg");
+  background-repeat: repeat;
+}
+
