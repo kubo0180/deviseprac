@@ -12,10 +12,6 @@
  *= require_tree .
  */
 
-#social-button {
-  vertical-align: middle;
-}
-
 footer {
   margin: 20px;
 }
@@ -24,4 +20,9 @@ body {
   background-image: url("./images/background_slice.jpg");
   background-repeat: repeat;
 }
+
+#social-button {
+  vertical-align: middle;
+}
+
 

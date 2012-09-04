@@ -15,9 +15,7 @@ Cinemeeting（シネミーティング、シネミー）なら、同じ映画に
     <p>Cinemeetingに関する最新情報はTwitterよりご連絡いたします。ぜひ、Cinemeetingの公式Twitterアカウントをフォローください。</p>
     <a href="https://twitter.com/cinemeeting" class="twitter-follow-button" data-show-count="false" data-lang="ja" data-size="large">@cinemeetingさんをフォロー</a>
     <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script> 
-</div>
-
   </div>
 <% else %>
-  <%= link_to 'Twitterで事前登録', user_omniauth_authorize_path(:twitter), :class=>'btn btn-info span2', :id=>"regist-btn" %>
+  <%= link_to 'Twitterで事前登録', user_omniauth_authorize_path(:twitter), :class=>'btn btn-large btn-info', :id=>"regist-btn" %>
 <% end %>
