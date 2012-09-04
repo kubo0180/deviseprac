@@ -1,4 +1,5 @@
-<iframe width="560" height="315" src="http://www.youtube.com/embed/jGqi3seHHgg" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="http://www.youtube.com/embed/4XXnt41Jui8?rel=0" frameborder="0" allowfullscreen></iframe>
+
 
 <h2 id="catch-copy">映画で出会う新しいカタチ</h2>
 <p>あの映画見たいな。そう思ってもなかなか友達と予定が合わない、<br>
@@ -17,5 +18,7 @@ Cinemeeting（シネミーティング、シネミー）なら、同じ映画に
     <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script> 
   </div>
 <% else %>
-  <%= link_to 'Twitterで事前登録', user_omniauth_authorize_path(:twitter), :class=>'btn btn-large btn-info', :id=>"regist-btn" %>
+  <div id="regist-label"><span class="label label-warning" id="regist-label">事前登録&nbsp;受付中！</span></div>
+  <div id="regist-btn"><%= link_to "Cinemeetingを試してみる", user_omniauth_authorize_path(:twitter), :class=>'btn btn-large btn-info' %></div>
+  <div id="warning-need-tw"><small>※事前登録にはTwitterアカウントが必要です。</small></div>
 <% end %>
