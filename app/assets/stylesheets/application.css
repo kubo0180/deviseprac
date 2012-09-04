@@ -12,12 +12,6 @@
  *= require_tree .
  */
 
-#logo {
-  font-weight: bold;
-  font-size: 500%;
-  margin-top: 20px;
-}
-
 #social-button {
   vertical-align: middle;
 }
