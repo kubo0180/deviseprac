@@ -2,7 +2,7 @@
 
 
 <h2 id="catch-copy">映画で出会う新しいカタチ</h2>
-<p>あの映画見たいな。そう思ってもなかなか友達と予定が合わない、<br>
+<p id="service-concept">あの映画見たいな。そう思ってもなかなか友達と予定が合わない、<br>
 映画の趣味が分からず誘いづらい、なんてことはありませんか？<br>
 Cinemeeting（シネミーティング、シネミー）なら、同じ映画に行きたい友達と出会えます。<br>
 趣味の合う友達と映画チャットで盛り上がる、一緒に映画を見て盛り上がる。<br>
@@ -10,11 +10,11 @@ Cinemeeting（シネミーティング、シネミー）なら、同じ映画に
 </p>
 
 <% if user_signed_in? %>
-  <div class="alert alert-block alert-success span5 registBox">
+  <div class="alert alert-block alert-success registBox">
     <h4 id="thanks-for-regist">登録ありがとうございます。</h4>
     <!-- <%= link_to 'ログアウト', destroy_user_session_path %> -->
-    <p>Cinemeetingに関する最新情報はTwitterよりご連絡いたします。ぜひ、Cinemeetingの公式Twitterアカウントをフォローください。</p>
-    <a href="https://twitter.com/cinemeeting" class="twitter-follow-button" data-show-count="false" data-lang="ja" data-size="large">@cinemeetingさんをフォロー</a>
+    <div id="reccomend-follow"><small>最新情報はTwitterよりご連絡いたします。ぜひ、Cinemeetingの公式Twitterアカウントをフォローください。</small></div>
+    <a href="https://twitter.com/cinemeeting" class="twitter-follow-button" data-show-count="false" data-lang="ja" data-size="large">@cinemeetingをフォロー</a>
     <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script> 
   </div>
 <% else %>
