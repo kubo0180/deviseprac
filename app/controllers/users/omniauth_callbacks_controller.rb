@@ -25,6 +25,6 @@ class Users::OmniauthCallbacksController < Devise::OmniauthCallbacksController
     end
   end
   def failure
-    render :text => "failure"
+    render :text => "Authorize failure. Please request again."
   end
 end
