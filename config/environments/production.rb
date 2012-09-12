@@ -1,5 +1,5 @@
 Cinemeeting::Application.configure do
-  
+
   Devise.setup do |config|
     config.omniauth :twitter, 'GvMbU9I0VqHN3QPNnpGN2A', 'ZoBp2fnA0XOm2RTOvHQ5Wdt35MoQHMjHrqaeWtgaGiw', :display => 'popup'
   end
@@ -20,7 +20,7 @@ Cinemeeting::Application.configure do
   config.assets.compress = true
 
   # Don't fallback to assets pipeline if a precompiled asset is missed
-  config.assets.compile = true #false
+  config.assets.compile = false
 
   # Generate digests for assets URLs
   config.assets.digest = true
